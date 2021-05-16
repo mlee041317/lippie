@@ -3,6 +3,9 @@ header  {
     text-align: center;
     padding: 10px;
     font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+    margin-top: -10px;
+    font-style: italic;
   }
 
   nav {
@@ -81,4 +84,8 @@ body {
   #social {
     width: 136px;
     height: 58px;
+  }
+
+  .subscribe {
+    margin: 10px;
   }

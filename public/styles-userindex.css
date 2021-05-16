@@ -3,10 +3,13 @@ header  {
     text-align: center;
     padding: 10px;
     font-family: 'Gothic A1', sans-serif;
+    font-style: italic;
+    margin-top: -10px;
+    width: 100%;
   }
   
   nav {
-    width: 95vw;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -28,6 +31,7 @@ header  {
 
 .delete {
   margin: 0 auto 10px;
+  border-radius: 8px;
 }
   
 body {
@@ -79,4 +83,6 @@ h1 {
     height: 58px;
   }
 
-  
+  .subscribe {
+    margin: 10px;
+  }

@@ -21,7 +21,7 @@
             <li><a href="/users">Users</a></li>
         </ul>
     </nav>
-    
+
     <h1>Edit <%= lipstick.lipstickName %>
     </h1>
 
@@ -35,15 +35,6 @@
             <label for="shades">Shade: </label>
             <input type="text" id="shades" name="shades" value="<%= lipstick.shades %>" />
         </div>
-
-        <!-- <div>
-        <label for="image">Image: </label>
-        <input type="text"
-        id="image"
-        name="image"
-        value="<%= lipstick.image %>"
-        />
-    </div> -->
 
         <div>
             <label for="description">Description: </label>
@@ -66,21 +57,23 @@
             <input type="text" id="price" name="price" value="<%= lipstick.price %>" />
         </div>
 
-        <button type="submit">Update</button>
+        <button class="update" type="submit">Update</button>
     </form>
 
     <div class="info">
-        <h4><a href="#">Contact</a></h4>
-        <h4>Shipping</a></h4>
-        <h4>Connect</a></h4>
+        <h4>Careers</h4>
+        <h4>Affiliates</h4>
+        <h4>Contact Us</h4>
+        <h4>Shipping</h4>
         <h5>Sign up for emails to get 10% off your first order!</h5>
         <form action="#">
-            <input type="text" placeholder="Email">
+            <input class="email" type="text" placeholder="Email">
         </form>
         <form action="#">
-            <input type="text" placeholder="Phone Number">
+            <input class="phone" type="text" placeholder="Phone Number">
         </form>
-        <button>Subscribe</button>
+        <button class="subscribe">Subscribe</button>
+
     </div>
 
     <footer class="followus">

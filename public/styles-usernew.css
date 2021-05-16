@@ -3,10 +3,13 @@ header  {
     text-align: center;
     padding: 10px;
     font-family: 'Gothic A1', sans-serif;
+    font-style: italic;
+    margin-top: -10px;
+    width: 100%;
   }
   
   nav {
-    width: 95vw;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -41,6 +44,7 @@ h1 {
 
 .submit {
   margin: 12px;
+  border-radius: 8px;
 }
   
 
@@ -76,4 +80,8 @@ h1 {
 #social {
     width: 136px;
     height: 58px;
+  }
+
+  .subscribe {
+    margin: 10px;
   }

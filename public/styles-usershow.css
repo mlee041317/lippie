@@ -3,10 +3,13 @@ header  {
   text-align: center;
   padding: 10px;
   font-family: 'Gothic A1', sans-serif;
+  font-style: italic;
+  margin-top: -10px;
+  width: 100%;
 }
 
 nav {
-  width: 95vw;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -15,13 +18,16 @@ nav ul {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  /* background-color: #DEBFA0; */
   background-color: #DCDAF2;
 }
 
 li {
   list-style-type: none;
   padding: 5px;
+}
+
+.shopping-cart {
+  margin: 10px;
 }
 
 body {
@@ -61,4 +67,8 @@ body {
 #social {
   width: 136px;
   height: 58px;
+}
+
+.subscribe {
+  margin: 10px;
 }

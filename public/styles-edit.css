@@ -3,6 +3,8 @@ header  {
   text-align: center;
   padding: 10px;
   font-family: 'Gothic A1', sans-serif;
+  margin-top: -10px;
+  font-style: italic;
 }
 
 nav {
@@ -15,7 +17,6 @@ nav ul {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  /* background-color: #DEBFA0; */
   background-color: #DCDAF2;
 }
 
@@ -23,6 +24,7 @@ li {
   list-style-type: none;
   padding: 5px;
 }
+
 
 body {
   background-color: #f2d9e4;
@@ -57,4 +59,13 @@ body {
 #social {
   width: 136px;
   height: 58px;
+}
+
+.update {
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.subscribe {
+  margin: 10px;
 }
