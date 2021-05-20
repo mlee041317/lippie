@@ -1,12 +1,16 @@
 const { response } = require('express');
 const express = require('express');
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000
+
 const db = require('./models/index.js');
 const methodOverride = require('method-override');
 
 
 app.set('view engine', 'ejs');
+
+
+
 
 // Middleware
 app.use((req, res, next) => {
@@ -151,7 +155,7 @@ app.get('/users/:id/shoppingCart/delete/:lipstickId', (req, res) => {
         foundUser.shoppingCart.remove(req.params.lipstickId);
         foundUser.save().then(savedUser => {
             res.redirect(`/users/${req.params.id}`)
-           
+
         });
     });
 });
@@ -159,9 +163,9 @@ app.get('/users/:id/shoppingCart/delete/:lipstickId', (req, res) => {
 // Delete User
 app.delete('/users/:id', (req, res) => {
     db.User.findByIdAndDelete(req.params.id, (err, deletedUser) => {
-            res.redirect('/users');
-        });
+        res.redirect('/users');
     });
+});
 
 // app.delete('/users/:id/shoppingCart/delete/:lipstickId', (req, res) => {
 //     db.User.findByIdAndUpdate(req.params.id, (err, foundUser) => {
@@ -222,6 +226,6 @@ app.post('/users', (req, res) => {
 
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log(`Our app listening at http://localhost:${PORT}`)
 });
