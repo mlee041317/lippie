@@ -10,8 +10,6 @@ const methodOverride = require('method-override');
 app.set('view engine', 'ejs');
 
 
-
-
 // Middleware
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.originalUrl}`);
